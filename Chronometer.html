@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Chronometer</title>
+		<style>
+			body{
+				background-color:#333;
+				color:#fff;
+				font-family:Helvetica;
+			}
+			
+			p{
+				font-size:64px;
+			}
+			
+			btn{
+				cursor:pointer;
+				user-select:none;
+				padding:5px 10px;
+				border:solid 1px #fff;
+				border-radius:50px;;
+				transition:200ms;
+			}
+			btn:hover{
+				border:dashed 1px #999;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<center>
+			<p style="font-size:36px;">CHRONOMETER</p>
+			<br>
+			<btn onclick="Start()">START / WAIT</btn>
+			<br><br>
+			<btn onclick="Save()">SAVE</btn>
+			<br><br>
+			<btn onclick="Reset()">RESET</btn>
+		</center>
+		<br><br><br>
+		<center>
+			<p id = "time">00 : 00 : 00 : 00</p>
+			<p id="savedTimes" style="font-size:26px;font-weight:lighter;"></p>
+		</center>
+	</body>
+</html>
+
+<script type="text/javascript" src = "script.js"></script>
